@@ -24,39 +24,14 @@ My work focuses on combining **water sciences, geospatial technologies, and prog
 Through my GitHub repositories, I share projects related to **GIS automation, Python geospatial analysis, remote sensing applications, and hydroinformatics workflows**.
 
 ---
-## 🌐 Socials:
-
-
-
-<p align="left">
-
-<a href="https://linkedin.com/in/mokhtar-bensalem" target="_blank">
-
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-
-</a>
-
-
-
-<a href="mailto:bensalem.mokhtar@outlook.com">
-
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-
-</a>
-
-</p>
 
 
 
 
 
-# 🛠️ Technical Skills
 
 
-
-
-
-## 🌍 GIS & Remote Sensing
+## GIS & Remote Sensing
 
 
 
@@ -82,7 +57,7 @@ Through my GitHub repositories, I share projects related to **GIS automation, Py
 
 
 
-## 🐍 Python & Data Analysis
+## Python & Data Analysis
 
 
 
@@ -114,7 +89,7 @@ Through my GitHub repositories, I share projects related to **GIS automation, Py
 
 
 
-## 🗺️ Geospatial Python Libraries
+## Geospatial Python Libraries
 
 
 
@@ -150,7 +125,7 @@ Through my GitHub repositories, I share projects related to **GIS automation, Py
 
 
 
-## 💻 Web Technologies
+## Web Technologies
 
 
 
@@ -182,7 +157,7 @@ Through my GitHub repositories, I share projects related to **GIS automation, Py
 
 
 
-## 🌊 Hydroinformatics & Water Resources
+## Hydroinformatics & Water Resources
 
 
 
