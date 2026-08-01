@@ -27,6 +27,34 @@ Through my GitHub repositories, I share projects related to **GIS automation, Py
 
 
 
+## Hydroinformatics & Water Resources
+
+
+
+
+
+<p align="left">
+
+
+
+<img src="https://img.shields.io/badge/Hydrology-0077B6?style=for-the-badge&logo=water&logoColor=white"/>
+
+
+
+<img src="https://img.shields.io/badge/Hydrogeology-008000?style=for-the-badge&logo=leaflet&logoColor=white"/>
+
+
+
+<img src="https://img.shields.io/badge/Remote%20Sensing-FF8C00?style=for-the-badge&logo=satellite&logoColor=white"/>
+
+
+
+<img src="https://img.shields.io/badge/GIS%20Automation-6A5ACD?style=for-the-badge&logo=python&logoColor=white"/>
+
+
+
+</p>
+
 
 
 
@@ -156,31 +184,3 @@ Through my GitHub repositories, I share projects related to **GIS automation, Py
 
 
 
-
-## Hydroinformatics & Water Resources
-
-
-
-
-
-<p align="left">
-
-
-
-<img src="https://img.shields.io/badge/Hydrology-0077B6?style=for-the-badge&logo=water&logoColor=white"/>
-
-
-
-<img src="https://img.shields.io/badge/Hydrogeology-008000?style=for-the-badge&logo=leaflet&logoColor=white"/>
-
-
-
-<img src="https://img.shields.io/badge/Remote%20Sensing-FF8C00?style=for-the-badge&logo=satellite&logoColor=white"/>
-
-
-
-<img src="https://img.shields.io/badge/GIS%20Automation-6A5ACD?style=for-the-badge&logo=python&logoColor=white"/>
-
-
-
-</p>
