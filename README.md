@@ -1,4 +1,12 @@
+# 👋 About Me
 
+### Hydrogeology Engineer Specialized in Groundwater Resources, Hydrology, GIS, and Remote Sensing
+
+I am a Hydrogeology Engineer with a Master's degree in Hydrogeology, interested in understanding and solving water-resource challenges through the integration of engineering knowledge, geospatial technologies, and programming.
+
+My work focuses on groundwater assessment, hydrological analysis, GIS applications, remote sensing, and geospatial data processing. I use tools such as QGIS, ArcGIS, Google Earth Engine, and Python geospatial libraries to develop analytical workflows, maps, and decision-support solutions for environmental and water-resource studies.
+
+Through my GitHub repositories, I share projects related to GIS automation, hydrogeological analysis, spatial data processing, and digital solutions for water management.
 
 ## 🌐 Socials:
 
