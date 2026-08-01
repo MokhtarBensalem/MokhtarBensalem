@@ -32,8 +32,6 @@
 
 ## 🌍 GIS & Remote Sensing
 
-Tools for spatial analysis, mapping, satellite data processing, and environmental applications.
-
 <p align="left">
 
 <img src="https://img.shields.io/badge/QGIS-589632?style=for-the-badge&logo=qgis&logoColor=white"/>
@@ -47,7 +45,6 @@ Tools for spatial analysis, mapping, satellite data processing, and environmenta
 
 ## 🐍 Python & Data Analysis
 
-Python-based tools for scientific computing, data processing, visualization, and automation workflows.
 
 <p align="left">
 
@@ -64,7 +61,6 @@ Python-based tools for scientific computing, data processing, visualization, and
 
 ## 🗺️ Geospatial Python Libraries
 
-Python libraries used for geospatial data processing, raster analysis, GIS automation, and spatial workflows.
 
 <p align="left">
 
@@ -83,7 +79,6 @@ Python libraries used for geospatial data processing, raster analysis, GIS autom
 
 ## 💻 Web Technologies
 
-Technologies for developing interactive web applications and Web GIS solutions.
 
 <p align="left">
 
@@ -100,7 +95,6 @@ Technologies for developing interactive web applications and Web GIS solutions.
 
 ## 🌊 Hydroinformatics & Water Resources
 
-Engineering applications combining hydrology, hydrogeology, GIS, and programming for water-resource analysis.
 
 <p align="left">
 
