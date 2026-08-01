@@ -30,87 +30,86 @@
 
 # 🛠️ Technical Skills
 
+# 🛠️ Languages and Tools
 
 ## 🌍 GIS & Remote Sensing
 
-Tools for spatial analysis, mapping, satellite data processing, and environmental applications.
-
 <p align="left">
 
-<img src="https://img.shields.io/badge/QGIS-589632?style=for-the-badge&logo=qgis&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/ArcGIS-2C7AC3?style=for-the-badge&logo=arcgis&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/Google%20Earth%20Engine-4285F4?style=for-the-badge&logo=googleearth&logoColor=white"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qgis/qgis-original.svg" width="45" height="45"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arcgis/arcgis-original.svg" width="45" height="45"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="45" height="45"/>
 
 </p>
 
+QGIS • ArcGIS • Google Earth Engine • Remote Sensing • Spatial Analysis
 
-## 🐍 Python & Data Analysis
 
-Python-based tools for scientific computing, data processing, visualization, and automation workflows.
+---
+
+## 🐍 Python & Scientific Computing
 
 <p align="left">
 
-<img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" height="45"/>
 
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="45" height="45"/>
 
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="45" height="45"/>
 
-<img src="https://img.shields.io/badge/Matplotlib-white?style=for-the-badge&logo=matplotlib&logoColor=black"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" width="45" height="45"/>
 
 </p>
 
+Python • Pandas • NumPy • Matplotlib • Data Analysis • Scientific Computing
+
+
+---
 
 ## 🗺️ Geospatial Python Libraries
 
-Python libraries used for geospatial data processing, raster analysis, GIS automation, and spatial workflows.
-
 <p align="left">
 
-<img src="https://img.shields.io/badge/GeoPandas-139C5A?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://raw.githubusercontent.com/python-visualization/folium/main/docs/logo/folium_logo.svg" width="45" height="45"/>
 
-<img src="https://img.shields.io/badge/Rasterio-2E8B57?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://geopandas.org/en/stable/_images/geopandas_icon.svg" width="45" height="45"/>
 
-<img src="https://img.shields.io/badge/PyQGIS-589632?style=for-the-badge&logo=qgis&logoColor=white"/>
+<img src="https://rasterio.readthedocs.io/en/latest/_static/rasterio.png" width="45" height="45"/>
 
-<img src="https://img.shields.io/badge/ArcPy-2C7AC3?style=for-the-badge&logo=arcgis&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/OpenPyXL-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" height="45"/>
 
 </p>
 
+GeoPandas • Rasterio • PyQGIS • ArcPy • OpenPyXL • GIS Automation
 
-## 💻 Web Technologies
 
-Technologies for developing interactive web applications and Web GIS solutions.
+---
+
+## 💻 Web Development
 
 <p align="left">
 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="45" height="45"/>
 
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="45" height="45"/>
 
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45" height="45"/>
 
-<img src="https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=white"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="45" height="45"/>
 
 </p>
 
+HTML5 • CSS3 • JavaScript • Sass • Web GIS Development
+
+
+---
 
 ## 🌊 Hydroinformatics & Water Resources
 
-Engineering applications combining hydrology, hydrogeology, GIS, and programming for water-resource analysis.
-
 <p align="left">
 
-<img src="https://img.shields.io/badge/Hydrology-0077B6?style=for-the-badge&logo=water&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/Hydrogeology-008000?style=for-the-badge&logo=leaflet&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/Remote%20Sensing-FF8C00?style=for-the-badge&logo=satellite&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/GIS%20Automation-6A5ACD?style=for-the-badge&logo=python&logoColor=white"/>
+🌊 💧 🗺️ 🛰️ 🐍
 
 </p>
+
+Hydrology • Hydrogeology • Groundwater Assessment • Hydrological Modeling • Environmental Data Analysis
