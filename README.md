@@ -17,68 +17,100 @@
 
 ## 🌐 Socials:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mokhtar-bensalem)
+<p align="left">
+<a href="https://linkedin.com/in/mokhtar-bensalem" target="_blank">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
 
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:bensalem.mokhtar@outlook.com)
+<a href="mailto:bensalem.mokhtar@outlook.com">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+</p>
 
 
-# 🛠️ Technical Skills:
+# 🛠️ Technical Skills
+
 
 ## 🌍 GIS & Remote Sensing
 
-![QGIS](https://img.shields.io/badge/QGIS-589632?style=for-the-badge&logo=qgis&logoColor=white)
-![ArcGIS](https://img.shields.io/badge/ArcGIS-2C7AC3?style=for-the-badge&logo=arcgis&logoColor=white)
-![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-4285F4?style=for-the-badge&logo=googleearth&logoColor=white)
+Tools for spatial analysis, mapping, satellite data processing, and environmental applications.
+
+<p align="left">
+
+<img src="https://img.shields.io/badge/QGIS-589632?style=for-the-badge&logo=qgis&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/ArcGIS-2C7AC3?style=for-the-badge&logo=arcgis&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Google%20Earth%20Engine-4285F4?style=for-the-badge&logo=googleearth&logoColor=white"/>
+
+</p>
 
 
 ## 🐍 Python & Data Analysis
 
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-white?style=for-the-badge&logo=matplotlib&logoColor=black)
+Python-based tools for scientific computing, data processing, visualization, and automation workflows.
+
+<p align="left">
+
+<img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Matplotlib-white?style=for-the-badge&logo=matplotlib&logoColor=black"/>
+
+</p>
 
 
 ## 🗺️ Geospatial Python Libraries
 
-- GeoPandas
-- Rasterio
-- PyQGIS
-- ArcPy
-- OpenPyXL
+Python libraries used for geospatial data processing, raster analysis, GIS automation, and spatial workflows.
+
+<p align="left">
+
+<img src="https://img.shields.io/badge/GeoPandas-139C5A?style=for-the-badge&logo=python&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Rasterio-2E8B57?style=for-the-badge&logo=python&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/PyQGIS-589632?style=for-the-badge&logo=qgis&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/ArcPy-2C7AC3?style=for-the-badge&logo=arcgis&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/OpenPyXL-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
+
+</p>
 
 
 ## 💻 Web Technologies
 
-![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![SASS](https://img.shields.io/badge/SASS-hotpink?style=for-the-badge&logo=SASS&logoColor=white)
+Technologies for developing interactive web applications and Web GIS solutions.
+
+<p align="left">
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+
+<img src="https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=white"/>
+
+</p>
 
 
-# 🚀 Featured Projects:
+## 🌊 Hydroinformatics & Water Resources
 
-🌊 **Groundwater Potential Mapping**
-- GIS and remote sensing based groundwater assessment.
-- Spatial analysis using geological, hydrological, and environmental data.
+Engineering applications combining hydrology, hydrogeology, GIS, and programming for water-resource analysis.
 
-🗺️ **GIS Automation Tools**
-- Python-based workflows for geospatial data processing and map production.
+<p align="left">
 
-💧 **Hydrological Data Analysis**
-- Processing and visualization of rainfall, discharge, and water-resource datasets.
+<img src="https://img.shields.io/badge/Hydrology-0077B6?style=for-the-badge&logo=water&logoColor=white"/>
 
-🌍 **Remote Sensing Applications**
-- Satellite data analysis using Google Earth Engine.
+<img src="https://img.shields.io/badge/Hydrogeology-008000?style=for-the-badge&logo=leaflet&logoColor=white"/>
 
+<img src="https://img.shields.io/badge/Remote%20Sensing-FF8C00?style=for-the-badge&logo=satellite&logoColor=white"/>
 
-# 📊 GitHub Stats:
+<img src="https://img.shields.io/badge/GIS%20Automation-6A5ACD?style=for-the-badge&logo=python&logoColor=white"/>
 
-![](https://github-readme-stats.shion.dev/api?username=MokhtarBensalem&theme=dark&hide_border=false)
-
-![](https://streak-stats.demolab.com/?user=MokhtarBensalem&theme=dark&hide_border=false)
-
-
----
-
-[![](https://komarev.com/ghpvc/?username=MokhtarBensalem&icon=0&color=0)](https://visitcount.itsvg.in)
+</p>
