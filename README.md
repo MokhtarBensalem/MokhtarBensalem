@@ -1,13 +1,29 @@
-# 👋 About Me
+<h1 align="center">Mokhtar Bensalem</h1>
 
-### Hydrogeology Engineer Specialized in Groundwater Resources, Hydrology, GIS, and Remote Sensing
+<h3 align="center">
+Hydrogeology Engineer | Hydrology | GIS & Remote Sensing Specialist
+</h3>
 
-I am a Hydrogeology Engineer with a Master's degree in Hydrogeology, interested in understanding and solving water-resource challenges through the integration of engineering knowledge, geospatial technologies, and programming.
+<p align="center">
+<a href="https://linkedin.com/in/mokhtar-bensalem">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>
 
-My work focuses on groundwater assessment, hydrological analysis, GIS applications, remote sensing, and geospatial data processing. I use tools such as QGIS, ArcGIS, Google Earth Engine, and Python geospatial libraries to develop analytical workflows, maps, and decision-support solutions for environmental and water-resource studies.
+<a href="mailto:bensalem.mokhtar@outlook.com">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white">
+</a>
+</p>
 
-Through my GitHub repositories, I share projects related to GIS automation, hydrogeological analysis, spatial data processing, and digital solutions for water management.
 
+---
+
+I am a **Hydrogeology Engineer** with a Master's degree in Hydrogeology, specialized in groundwater resources, hydrological analysis, GIS, and remote sensing.
+
+My work focuses on combining **water sciences, geospatial technologies, and programming** to develop solutions for groundwater assessment, watershed analysis, environmental monitoring, and spatial data-driven decision making.
+
+Through my GitHub repositories, I share projects related to **GIS automation, Python geospatial analysis, remote sensing applications, and hydroinformatics workflows**.
+
+---
 ## 🌐 Socials:
 
 
