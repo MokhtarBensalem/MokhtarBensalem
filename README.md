@@ -22,7 +22,7 @@
 </a>
 
 <a href="mailto:bensalem.mokhtar@outlook.com">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/alt="Python">
 </a>
 </p>
 
