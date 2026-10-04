@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
+  <defs>
+    <!-- Deep Midnight Gradient -->
+    <linearGradient id="nightBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07080d"/>
+      <stop offset="40%" stop-color="#0d0f18"/>
+      <stop offset="75%" stop-color="#140a12"/>
+      <stop offset="100%" stop-color="#1f070b"/>
+    </linearGradient>
+
+    <!-- Brilliant Anamorphic Red Lens Flare -->
+    <radialGradient id="flareCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="15%" stop-color="#ffe4e6"/>
+      <stop offset="35%" stop-color="#f43f5e"/>
+      <stop offset="65%" stop-color="#be123c"/>
+      <stop offset="100%" stop-color="#881337" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Warm Atmospheric Glow -->
+    <radialGradient id="nightGlow" cx="50%" cy="62%" r="45%">
+      <stop offset="0%" stop-color="#e11d48" stop-opacity="0.85"/>
+      <stop offset="40%" stop-color="#9f1239" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="#4c0519" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="flareStreak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#fb7185" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="65%" stop-color="#fb7185" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="bokehBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+
+  <!-- Obsidian Night Sky -->
+  <rect width="1000" height="1500" fill="url(#nightBg)"/>
+
+  <!-- Distant Nocturnal City Silhouette / Skyline at Base -->
+  <g fill="#050608">
+    <rect x="50" y="1150" width="70" height="350"/>
+    <rect x="140" y="1100" width="90" height="400"/>
+    <rect x="250" y="1220" width="60" height="280"/>
+    <rect x="330" y="1080" width="110" height="420"/>
+    <rect x="460" y="1140" width="80" height="360"/>
+    <rect x="560" y="1050" width="120" height="450"/>
+    <rect x="700" y="1180" width="90" height="320"/>
+    <rect x="810" y="1110" width="80" height="390"/>
+    <rect x="910" y="1160" width="70" height="340"/>
+  </g>
+
+  <!-- Distant City Lights / Bokeh -->
+  <g opacity="0.6">
+    <circle cx="90" cy="1180" r="3" fill="#fbbf24"/>
+    <circle cx="170" cy="1130" r="4" fill="#f87171"/>
+    <circle cx="210" cy="1160" r="3" fill="#ffffff"/>
+    <circle cx="360" cy="1110" r="3.5" fill="#f43f5e"/>
+    <circle cx="390" cy="1150" r="2.5" fill="#fbbf24"/>
+    <circle cx="610" cy="1080" r="4" fill="#ffffff"/>
+    <circle cx="650" cy="1120" r="3" fill="#fbbf24"/>
+    <circle cx="740" cy="1200" r="3.5" fill="#f87171"/>
+    <circle cx="850" cy="1140" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- Dark Atmospheric Silhouette in Midground (Photographer holding torch/flare) -->
+  <g fill="#08090d">
+    <!-- Figure on elevation -->
+    <path d="M 450,960 Q 480,950 510,950 Q 540,950 570,960 L 590,1200 L 430,1200 Z"/>
+    <!-- Head -->
+    <circle cx="510" cy="910" r="25"/>
+    <!-- Raised Arm holding flare stick -->
+    <path d="M 530,950 L 565,820 L 585,825 L 545,960 Z"/>
+    <!-- Flare Torch Device -->
+    <rect x="560" y="780" width="12" height="50" rx="3" fill="#262626"/>
+  </g>
+
+  <!-- Major Red Ambient Atmosphere / Glow -->
+  <circle cx="566" cy="780" r="450" fill="url(#nightGlow)" filter="url(#bokehBlur)"/>
+
+  <!-- Ground Light Reflections on Wet Pavement / Pier -->
+  <path d="M 0,1250 L 1000,1250 L 1000,1500 L 0,1500 Z" fill="#120508"/>
+  <ellipse cx="566" cy="1380" rx="300" ry="60" fill="#e11d48" opacity="0.35" filter="url(#bokehBlur)"/>
+
+  <!-- Radiant Optical Starburst Rays from Flare Origin -->
+  <g stroke="#fda4af" stroke-width="2" opacity="0.75">
+    <line x1="566" y1="780" x2="100" y2="400"/>
+    <line x1="566" y1="780" x2="250" y2="250"/>
+    <line x1="566" y1="780" x2="566" y2="150"/>
+    <line x1="566" y1="780" x2="850" y2="280"/>
+    <line x1="566" y1="780" x2="950" y2="480"/>
+    <line x1="566" y1="780" x2="920" y2="850"/>
+    <line x1="566" y1="780" x2="750" y2="1100"/>
+    <line x1="566" y1="780" x2="400" y2="1120"/>
+    <line x1="566" y1="780" x2="180" y2="920"/>
+  </g>
+
+  <!-- Cinematic Anamorphic Horizontal Flare Streak -->
+  <rect x="0" y="776" width="1000" height="8" fill="url(#flareStreak)"/>
+  <rect x="100" y="774" width="800" height="12" fill="url(#flareStreak)" opacity="0.6"/>
+
+  <!-- Flare Core Radiant Burst -->
+  <circle cx="566" cy="780" r="140" fill="url(#flareCore)"/>
+  <circle cx="566" cy="780" r="28" fill="#ffffff"/>
+
+  <!-- Sparks & Glowing Embers Drift -->
+  <g fill="#ffe4e6">
+    <circle cx="540" cy="730" r="3.5"/>
+    <circle cx="590" cy="710" r="2.5"/>
+    <circle cx="520" cy="670" r="4"/>
+    <circle cx="610" cy="650" r="3"/>
+    <circle cx="575" cy="620" r="3.5"/>
+    <circle cx="550" cy="580" r="2"/>
+    <circle cx="630" cy="550" r="4"/>
+    <circle cx="510" cy="520" r="2.5"/>
+    <circle cx="580" cy="480" r="3"/>
+    <circle cx="605" cy="420" r="2"/>
+  </g>
+</svg>

@@ -1,0 +1,1109 @@
+/* ==========================================================================
+   RESPONSIVE PHOTOGRAPHY PORTFOLIO — ZERO-GAP JUSTIFIED MASONRY GALLERY
+   Design: Modern Dark Aesthetic (#1a1a1a) | Zero Gap Seamless Integration
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CSS Custom Properties / Design Tokens
+   -------------------------------------------------------------------------- */
+:root {
+  /* Colors - Modern Dark Default (#1a1a1a) */
+  --bg-color: #1a1a1a;
+  --bg-surface: #222222;
+  --bg-card: #262626;
+  --bg-overlay: rgba(0, 0, 0, 0.6); /* Requirement 4: exact rgba(0,0,0,0.6) */
+  --header-bg: rgba(26, 26, 26, 0.94);
+  --header-border: rgba(255, 255, 255, 0.08);
+
+  --text-primary: #f5f5f5;
+  --text-secondary: #a3a3a3;
+  --text-muted: #737373;
+  --text-white: #ffffff;
+
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --focus-ring: #3b82f6;
+
+  /* Typography */
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Layout dimensions */
+  --header-height: 90px;
+  --container-max-width: 100%;
+
+  /* Transitions */
+  --transition-smooth: 0.3s ease;
+  --transition-fast: 0.18s ease;
+}
+
+/* Light Theme Mode */
+[data-theme="light"] {
+  --bg-color: #f7f8fa;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-overlay: rgba(0, 0, 0, 0.6); /* Requirement 4: overlay remains high-contrast dark */
+  --header-bg: rgba(247, 248, 250, 0.94);
+  --header-border: rgba(0, 0, 0, 0.08);
+  --text-primary: #121212;
+  --text-secondary: #525252;
+  --text-muted: #9ca3af;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+}
+
+/* --------------------------------------------------------------------------
+  2. Reset & Global Styles
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-smooth), color var(--transition-smooth);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast), opacity var(--transition-fast);
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Keyboard accessibility skip link */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  background: var(--text-white);
+  color: #111;
+  padding: 10px 18px;
+  z-index: 999;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: top var(--transition-fast);
+}
+.skip-link:focus {
+  top: 20px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+  3. Header & Navigation (Clean Minimalist Aesthetic)
+     - Desktop (≥769px): Fixed/sticky at top: 0
+     - Mobile (≤768px): Relative/normal scrolling with the page
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: relative; /* Normal flow on mobile / phones */
+  top: auto;
+  z-index: 100;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--header-bg);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid var(--header-border);
+  transform: translateZ(0); /* Hardware accelerated composite layer eliminates scroll lag */
+  will-change: transform, box-shadow;
+  transition: background-color var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+/* Sticky on Desktop / PC only */
+@media (min-width: 769px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.site-header.is-scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+}
+
+
+.brand-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.brand-title:hover {
+  opacity: 0.85;
+}
+
+/* Desktop Navigation */
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .main-nav {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  position: relative;
+  padding: 6px 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-primary);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-primary);
+  border-radius: 1px;
+}
+
+/* Header utility actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-connexion {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all var(--transition-fast);
+}
+
+.btn-connexion:hover {
+  color: var(--text-primary);
+  background-color: var(--border-subtle);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.social-link svg {
+  width: 19px;
+  height: 19px;
+}
+
+.social-link:hover {
+  color: var(--text-primary);
+  background-color: var(--border-subtle);
+}
+
+.btn-theme {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.btn-theme svg {
+  width: 19px;
+  height: 19px;
+}
+
+.btn-theme:hover {
+  color: var(--text-primary);
+  background-color: var(--border-subtle);
+}
+
+/* Show correct sun/moon based on theme */
+[data-theme="dark"] .btn-theme .icon-sun {
+  display: block;
+}
+[data-theme="dark"] .btn-theme .icon-moon {
+  display: none;
+}
+[data-theme="light"] .btn-theme .icon-sun {
+  display: none;
+}
+[data-theme="light"] .btn-theme .icon-moon {
+  display: block;
+}
+
+/* Hamburger button (≤768px) */
+.btn-hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: transparent;
+  padding: 8px;
+}
+
+@media (min-width: 769px) {
+  .btn-hamburger {
+    display: none;
+  }
+}
+
+.hamburger-line {
+  width: 22px;
+  height: 2px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+  transition: transform var(--transition-smooth), opacity var(--transition-smooth);
+}
+
+body.nav-open .hamburger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+body.nav-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+body.nav-open .hamburger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Drawer */
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 150;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-smooth), visibility var(--transition-smooth);
+}
+
+body.nav-open .nav-backdrop {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 280px;
+  height: 100vh;
+  background-color: var(--bg-surface);
+  border-left: 1px solid var(--header-border);
+  z-index: 200;
+  padding: 80px 28px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.5);
+  transition: transform var(--transition-smooth);
+}
+
+body.nav-open .mobile-drawer {
+  transform: translateX(-300px);
+}
+
+.mobile-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.mobile-nav-link {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: var(--text-primary);
+}
+
+.mobile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 24px;
+}
+
+/* --------------------------------------------------------------------------
+   4. Gallery Toolbar & Controls
+   -------------------------------------------------------------------------- */
+.portfolio-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 28px 32px;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.portfolio-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.portfolio-heading {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.photo-counter {
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+}
+
+.toolbar-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Shuffle Button */
+.btn-shuffle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  transition: all var(--transition-fast);
+}
+
+.btn-shuffle:hover {
+  background-color: var(--text-white);
+  color: #111111;
+  border-color: transparent;
+  transform: translateY(-1px);
+}
+
+.btn-shuffle svg {
+  transition: transform 0.4s ease;
+}
+
+.btn-shuffle:active svg {
+  transform: rotate(180deg);
+}
+
+/* Filter Buttons */
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.filter-btn {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background-color: var(--bg-surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-btn.active {
+  background-color: var(--text-primary);
+  color: var(--bg-color);
+  font-weight: 600;
+  border-color: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   5. MASONRY / JUSTIFIED GRID — ZERO GAP FULLSCREEN SYSTEM
+   -------------------------------------------------------------------------- */
+.gallery-section {
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+.gallery-justified {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Requirement 1 & 5: ZERO GAPS */
+}
+
+/* Each row occupies 100% of the screen width with zero gaps */
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 0; /* Zero gaps between images in a row */
+  overflow: hidden;
+}
+
+/* Gallery Item: zero margin, zero padding, flex proportioned */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  outline: none;
+}
+
+.gallery-item.is-hidden {
+  display: none !important;
+}
+
+.gallery-figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+/* Subtle zoom effect on desktop hover only (prevents mobile touch misalignment) */
+@media (hover: hover) and (pointer: fine) {
+  .gallery-item:hover .gallery-img {
+    transform: scale(1.04);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. HOVER & TAP OVERLAY
+   - Centered white title
+   - Smooth 0.3s fade-in animation
+   - Pixel-perfect flush bounding to the image container
+   -------------------------------------------------------------------------- */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.65) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition-smooth), visibility var(--transition-smooth);
+  z-index: 2;
+}
+
+/* Reveal overlay on hover (desktop), active tap (mobile), or focus */
+.gallery-item:hover .gallery-overlay,
+.gallery-item.is-active .gallery-overlay,
+.gallery-item:focus-visible .gallery-overlay {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.gallery-title {
+  color: var(--text-white);
+  font-family: var(--font-heading);
+  font-size: clamp(0.92rem, 2.6vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 1.25;
+  margin: 0;
+  max-width: 90%;
+  word-break: break-word;
+  transform: translateY(8px);
+  transition: transform var(--transition-smooth);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75);
+}
+
+.gallery-meta {
+  display: none !important; /* Categories and dimensions purged per user instructions */
+}
+
+.gallery-item:hover .gallery-title,
+.gallery-item.is-active .gallery-title,
+.gallery-item:focus-visible .gallery-title {
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   7. Responsive Breakpoint Specifics (Requirement 5)
+   - MOBILE (< 480px): 1-2 images per row, full-width
+   - TABLET (480px - 1024px): 2-3 images per row
+   - DESKTOP (> 1024px): 3-4 images per row, fully justified
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 16px;
+  }
+  .portfolio-toolbar {
+    padding: 16px;
+  }
+  .gallery-overlay {
+    padding: 10px 8px;
+  }
+  .gallery-title {
+    font-size: 0.95rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   8. Fullscreen Lightbox Modal
+   -------------------------------------------------------------------------- */
+.lightbox-modal {
+  border: none;
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-smooth);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.lightbox-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.lightbox-modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Lightbox Stage: Houses Prev, Media Wrapper & Next side-by-side */
+.lightbox-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 2.2vw, 30px); /* Buttons stay snugly close to the image! */
+  padding: 24px clamp(16px, 3vw, 36px);
+  box-sizing: border-box;
+}
+
+/* Media Wrapper: Image + Caption */
+.lightbox-media-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100vw - 160px); /* Leaves dedicated room for flanking buttons */
+  max-height: 90vh;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.lightbox-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  touch-action: pan-y pinch-zoom;
+  overflow: visible;
+}
+
+.lightbox-image {
+  max-width: min(82vw, calc(100vw - 180px));
+  max-height: calc(86vh - 65px);
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.85);
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.3s ease;
+  will-change: transform, opacity;
+}
+
+.lightbox-caption {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--text-white);
+  pointer-events: none;
+}
+
+.lightbox-caption-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-caption-meta {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-top: 3px;
+  letter-spacing: 0.3px;
+}
+
+/* General Lightbox Button Base */
+.lightbox-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text-white);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+  z-index: 1010;
+}
+
+.lightbox-btn svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.lightbox-btn:hover {
+  background: rgba(255, 255, 255, 0.26);
+  transform: scale(1.08);
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-btn:active {
+  transform: scale(0.95);
+}
+
+/* Fixed Close Button in upper right */
+.lightbox-close {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 1020;
+}
+
+/* Navigation Buttons on Desktop/Tablet: Flank image snugly with zero overlap */
+.lightbox-nav {
+  position: static;
+  transform: none;
+}
+
+.lightbox-prev:hover {
+  transform: scale(1.08) translateX(-2px);
+}
+
+.lightbox-next:hover {
+  transform: scale(1.08) translateX(2px);
+}
+
+/* --------------------------------------------------------------------------
+  Swipe Instructions Hint (Shown Once Only on Mobile / Touch)
+   -------------------------------------------------------------------------- */
+.lightbox-swipe-hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.92);
+  background: rgba(18, 18, 24, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 18px;
+  padding: 18px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 50;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+  max-width: 290px;
+  width: 86%;
+}
+
+.lightbox-swipe-hint.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+.swipe-hint-gesture {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 44px;
+}
+
+.swipe-hint-icon {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  animation: swipeGesture 2s ease-in-out infinite;
+}
+
+.swipe-hint-arrows {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.75);
+  animation: arrowPulse 2s ease-in-out infinite;
+}
+
+@keyframes swipeGesture {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-18px) rotate(-6deg);
+  }
+  75% {
+    transform: translateX(18px) rotate(6deg);
+  }
+}
+
+@keyframes arrowPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.swipe-hint-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.swipe-hint-fr {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+.swipe-hint-ar {
+  font-family: var(--font-body);
+  font-size: 0.86rem;
+  color: rgba(255, 255, 255, 0.85);
+  direction: rtl;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Viewport Adjustments (< 768px):
+   - Grid layout: Media occupies top row, Prev/Next buttons below caption
+   - Zero image overlap, maximum visible photo area, easy thumb reach
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .lightbox-stage {
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "media media media media"
+      ". prev next .";
+    gap: 14px 18px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 56px 12px 22px;
+  }
+
+  .lightbox-media-wrapper {
+    grid-area: media;
+    max-width: 100%;
+    max-height: calc(100vh - 170px);
+    width: 100%;
+  }
+
+  .lightbox-image {
+    max-width: 96vw;
+    max-height: calc(100vh - 180px);
+  }
+
+  .lightbox-close {
+    top: 14px;
+    right: 14px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .lightbox-nav {
+    width: 44px;
+    height: 44px;
+  }
+
+  .lightbox-prev {
+    grid-area: prev;
+    margin-right: 6px;
+  }
+
+  .lightbox-next {
+    grid-area: next;
+    margin-left: 6px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   9. Footer
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  padding: 60px 32px 32px;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.footer-brand {
+  max-width: 560px;
+}
+
+.footer-brand-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.footer-brand-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.footer-links-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer-column-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.footer-column-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column-list a,
+.footer-contact-item {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-column-list a:hover {
+  color: var(--text-primary);
+}
+
+.footer-socials {
+  display: flex;
+  
+  gap: 12px;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .site-header .btn-connexion {
+    display: none;
+  }
+  .site-header .social-link {
+    display: none;
+  }
+  .header-container {
+    padding: 0 16px;
+  }
+  .brand-title {
+    font-size: 1.25rem;
+  }
+}

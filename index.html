@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio photographique professionnel — Galerie d'œuvres avec mise en page grille masonry/justifiée responsive, plein écran sans espacement (zero gap), mode sombre moderne et visionneuse haute résolution.">
+  <meta name="theme-color" content="#1a1a1a" id="themeColorMeta">
+  <title>Bensalem Mokhrar</title>
+
+  <!-- Google Fonts: Poppins (Titres & Overlays) & Inter (Navigation & Corps) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard accessibility 
+  <a href="#mainContent" class="skip-link">Passer au contenu principal</a>
+-->
+  <!-- ==================== HEADER (Desktop Sticky Navigation, Mobile Normal) ==================== -->
+  <header class="site-header" id="siteHeader" role="banner">
+    <div class="header-container">
+      <!-- Brand / Photographer Title (Preserved user customization & theme toggle) -->
+      <div class="brand-group">
+        <button id="themeToggle" type="button" aria-label="Passer en mode clair" title="Basculer le thème">
+          <a href="#home" class="brand-title" aria-label="Accueil — Bensalem Mokhtar">Bensalem Mokhtar</a>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main id="mainContent" class="main-content">
+    <!-- FULLSCREEN ZERO-GAP JUSTIFIED MASONRY GALLERY SECTION -->
+    <section class="gallery-section" id="portfolio" aria-label="Galerie des photographies">
+      <!-- The container holds dynamic rows rendered with zero gaps -->
+      <div class="gallery-justified" id="galleryContainer" role="region" aria-label="Grille justifiée sans espacement de photographies">
+
+        <!-- 1. Symbol of Memory.jpg -->
+        <article class="gallery-item"
+                 data-id="symbol-of-memory"
+                 data-ratio="0.75"
+                 data-width="3072"
+                 data-height="4096"
+                 tabindex="0"
+                 role="button"
+                 aria-haspopup="dialog"
+                 aria-label="Symbol of Memory">
+          <figure class="gallery-figure">
+            <img class="gallery-img"
+                 src="images/opt/Symbol of Memory.jpg"
+                 data-full="images/Symbol of Memory.jpg"
+                 alt="Symbol of Memory — Monument commémoratif majestueux s'élevant vers le ciel"
+                 width="3072"
+                 height="4096"
+                 loading="eager"
+                 fetchpriority="high"
+                 decoding="async">
+            <div class="gallery-overlay" aria-hidden="true">
+              <h2 class="gallery-title">Symbol of Memory</h2>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 2. The Horizon of Sand and Sea.jpg -->
+        <article class="gallery-item"
+                 data-id="horizon-sand-sea"
+                 data-ratio="0.75"
+                 data-width="3072"
+                 data-height="4096"
+                 tabindex="0"
+                 role="button"
+                 aria-haspopup="dialog"
+                 aria-label="The Horizon of Sand and Sea">
+          <figure class="gallery-figure">
+            <img class="gallery-img"
+                 src="images/opt/The Horizon of Sand and Sea.jpg"
+                 data-full="images/The Horizon of Sand and Sea.jpg"
+                 alt="The Horizon of Sand and Sea — Bateau de pêche à l'aube sur les eaux calmes au crépuscule doré"
+                 width="3072"
+                 height="4096"
+                 loading="eager"
+                 fetchpriority="high"
+                 decoding="async">
+            <div class="gallery-overlay" aria-hidden="true">
+              <h2 class="gallery-title">The Horizon of Sand and Sea</h2>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 3. 1746104395630.jpg - Mountain Peak -->
+        <article class="gallery-item"
+                 data-id="mountain-peak"
+                 data-ratio="0.75"
+                 data-width="1536"
+                 data-height="2048"
+                 tabindex="0"
+                 role="button"
+                 aria-haspopup="dialog"
+                 aria-label="Mountain Peak">
+          <figure class="gallery-figure">
+            <img class="gallery-img"
+                 src="images/opt/1746104395630.jpg"
+                 data-full="images/1746104395630.jpg"
+                 alt="Mountain Peak — Vue panoramique de crêtes rocheuses et forêts verdoyantes dans la vallée"
+                 width="1536"
+                 height="2048"
+                 loading="eager"
+                 decoding="async">
+            <div class="gallery-overlay" aria-hidden="true">
+              <h2 class="gallery-title">Ampsaga River</h2>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 4. 1746199967050.jpg - Desert Dreams -->
+        <article class="gallery-item"
+                 data-id="desert-dreams"
+                 data-ratio="0.8003"
+                 data-width="1639"
+                 data-height="2048"
+                 tabindex="0"
+                 role="button"
+                 aria-haspopup="dialog"
+                 aria-label="Desert Dreams">
+          <figure class="gallery-figure">
+            <img class="gallery-img"
+                 src="images/opt/1746199967050.jpg"
+                 data-full="images/1746199967050.jpg"
+                 alt="Desert Dreams — Paysage vallonné spectaculaire illuminé par la lumière du désert"
+                 width="1639"
+                 height="2048"
+                 loading="eager"
+                 decoding="async">
+            <div class="gallery-overlay" aria-hidden="true">
+              <h2 class="gallery-title">Desert Dreams</h2>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 5. 1786046552094 (1).jpg - Urban Landscape -->
+        <article class="gallery-item"
+                 data-id="urban-landscape"
+                 data-ratio="0.75"
+                 data-width="4607"
+                 data-height="6144"
+                 tabindex="0"
+                 role="button"
+                 aria-haspopup="dialog"
+                 aria-label="Urban Landscape">
+          <figure class="gallery-figure">
+            <img class="gallery-img"
+                 src="images/opt/1786046552094 (1).jpg"
+                 data-full="images/1786046552094 (1).jpg"
+                 alt="Urban Landscape — Sculpture monumentale entourée de végétation et palmiers urbains"
+                 width="4607"
+                 height="6144"
+                 loading="eager"
+                 decoding="async">
+            <div class="gallery-overlay" aria-hidden="true">
+              <h2 class="gallery-title">Urban Landscape</h2>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 6. 1788987631135.jpg - Coastal Journey -->
+        <article class="gallery-item"
+                 data-id="coastal-journey"
+                 data-ratio="1.3259"
+                 data-width="1188"
+                 data-height="896"
+                 tabindex="0"
+                 role="button"
+                 aria-haspopup="dialog"
+                 aria-label="Coastal Journey">
+          <figure class="gallery-figure">
+            <img class="gallery-img"
+                 src="images/opt/1788987631135.jpg"
+                 data-full="images/1788987631135.jpg"
+                 alt="Coastal Journey — Vue panoramique côtière avec jetée s'étendant dans une brume poétique"
+                 width="1188"
+                 height="896"
+                 loading="eager"
+                 decoding="async">
+            <div class="gallery-overlay" aria-hidden="true">
+              <h2 class="gallery-title">Coastal Journey</h2>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 7. Algiers from Above.jpg -->
+        <article class="gallery-item"
+                 data-id="algiers-from-above"
+                 data-ratio="1.0002"
+                 data-width="4096"
+                 data-height="4095"
+                 tabindex="0"
+                 role="button"
+                 aria-haspopup="dialog"
+                 aria-label="Algiers from Above">
+          <figure class="gallery-figure">
+            <img class="gallery-img"
+                 src="images/opt/Algiers from Above.jpg"
+                 data-full="images/Algiers from Above.jpg"
+                 alt="Algiers from Above — Vue aérienne géométrique plongeante sur la baie et les toitures blanches d'Alger"
+                 width="4096"
+                 height="4095"
+                 loading="eager"
+                 decoding="async">
+            <div class="gallery-overlay" aria-hidden="true">
+              <h2 class="gallery-title">Algiers from Above</h2>
+            </div>
+          </figure>
+        </article>
+
+        <!-- 8. IMG20240418171554.jpg - Evening Light -->
+        <article class="gallery-item"
+                 data-id="evening-light"
+                 data-ratio="0.7522"
+                 data-width="2783"
+                 data-height="3700"
+                 tabindex="0"
+                 role="button"
+                 aria-haspopup="dialog"
+                 aria-label="Evening Light">
+          <figure class="gallery-figure">
+            <img class="gallery-img"
+                 src="images/opt/IMG20240418171554.jpg"
+                 data-full="images/IMG20240418171554.jpg"
+                 alt="Evening Light — Éclairage crépusculaire doré sur architecture et ciel nuageux"
+                 width="2783"
+                 height="3700"
+                 loading="eager"
+                 decoding="async">
+            <div class="gallery-overlay" aria-hidden="true">
+              <h2 class="gallery-title">The Naili Statue</h2>
+            </div>
+          </figure>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== LIGHTBOX MODAL DIALOG ==================== -->
+  <dialog class="lightbox-modal" id="lightboxModal" aria-modal="true" aria-labelledby="lightboxTitle" aria-hidden="true">
+    <!-- Close button -->
+    <button type="button" class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Fermer la visionneuse (Echap)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <!-- Responsive Lightbox Stage: Holds Prev, Image Wrapper, and Next buttons -->
+    <div class="lightbox-stage" id="lightboxStage">
+      <!-- Previous image button -->
+      <button type="button" class="lightbox-btn lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Image précédente (Flèche gauche)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+
+      <!-- Media Wrapper: Image container & Caption -->
+      <div class="lightbox-media-wrapper" id="lightboxMediaWrapper">
+        <div class="lightbox-image-container" id="lightboxImageContainer">
+          <img src="" alt="" id="lightboxImg" class="lightbox-image" draggable="false">
+
+          <!-- Swipe instructions hint (shown once only) -->
+          <div class="lightbox-swipe-hint" id="lightboxSwipeHint" role="status" aria-live="polite">
+            <div class="swipe-hint-gesture">
+              <svg class="swipe-hint-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/>
+                <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/>
+                <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/>
+                <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>
+              </svg>
+              <div class="swipe-hint-arrows">
+                <span class="arrow-left">&#8592;</span>
+                <span class="arrow-right">&#8594;</span>
+              </div>
+            </div>
+            <div class="swipe-hint-text">
+              <span class="swipe-hint-fr">Glissez pour changer de photo</span>
+              <span class="swipe-hint-ar">اسحب لليمين أو اليسار للتنقل</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Caption -->
+        <div class="lightbox-caption">
+          <span class="lightbox-caption-title" id="lightboxTitle"></span>
+        </div>
+      </div>
+
+      <!-- Next image button -->
+      <button type="button" class="lightbox-btn lightbox-nav lightbox-next" id="lightboxNext" aria-label="Image suivante (Flèche droite)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+    </div>
+  </dialog>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" id="contact" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+        
+        <!-- Brand / About in Footer -->
+        <div class="footer-brand" id="about">
+          <p class="footer-brand-title">BENSALEM MOKHTAR</p>
+          <p class="footer-brand-desc">
+            I am an amateur photographer by passion. Through my photographs, I document places, landscapes, historical landmarks, and fleeting moments. Combined with my background as a hydrogeological engineer. I share a unique perspective on the world around me through my lens.
+          </p>
+        </div>
+
+        <!-- Links Columns -->
+        <div class="footer-links-group">
+          
+
+          <!-- Contact Information -->
+          <div>
+            <p class="footer-column-title">Contact</p>
+            <ul class="footer-column-list">
+              <li class="footer-contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              <a href="mailto:bensalem.mokhtar@outlook.com">
+                <span>bensalem.mokhtar@outlook.com</span>
+              </a>
+              </li>
+              <li class="footer-contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>Algiers, Algeria</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div>
+            <p class="footer-column-title">Social Media</p>
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/mokhtar.x/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/>
+                </svg>
+              </a>
+              <!-- <a href="https://x.com" class="social-link" aria-label="Twitter X" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="https://facebook.com" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </a>-->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom info -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 BENSALEM MOKHTAR. All rights reserved.</p>
+        <p>Photography &middot; Art Direction &middot; Algeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

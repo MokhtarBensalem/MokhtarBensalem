@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
+  <defs>
+    <!-- Misty B&W Atmospheric Sky Gradient -->
+    <linearGradient id="mistSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eceef0"/>
+      <stop offset="30%" stop-color="#dde1e5"/>
+      <stop offset="60%" stop-color="#c5cbd2"/>
+      <stop offset="100%" stop-color="#adb5be"/>
+    </linearGradient>
+
+    <!-- Mountain Cliff Face Monochrome Gradients -->
+    <linearGradient id="rockGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#555c65"/>
+      <stop offset="50%" stop-color="#32373e"/>
+      <stop offset="100%" stop-color="#16181b"/>
+    </linearGradient>
+
+    <linearGradient id="distantPeakGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a4abb5"/>
+      <stop offset="100%" stop-color="#7e8792"/>
+    </linearGradient>
+
+    <filter id="mistBlur">
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect width="1000" height="1500" fill="url(#mistSky)"/>
+
+  <!-- Distant Foggy Alpine Peak (Subtle silhouette in clouds) -->
+  <path d="M 180,680 L 520,240 L 780,480 L 890,390 L 1000,560 L 1000,1000 L 0,1000 L 0,720 Z" 
+        fill="url(#distantPeakGrad)" opacity="0.6"/>
+
+  <!-- Alpine Mist Layer -->
+  <circle cx="500" cy="500" r="400" fill="#ffffff" opacity="0.45" filter="url(#mistBlur)"/>
+
+  <!-- Mid-distance Ridge (Darker gray) -->
+  <path d="M 0,780 L 220,620 L 460,720 L 700,560 L 1000,740 L 1000,1100 L 0,1100 Z" 
+        fill="#3f454d" opacity="0.8"/>
+
+  <!-- Dramatic Foreground Cliff Face (Rock crags matching reference image) -->
+  <path d="M 0,650 
+           Q 80,640 140,680 
+           L 180,660 
+           L 240,710 
+           L 320,670 
+           Q 420,690 480,760 
+           L 520,740 
+           L 580,820 
+           L 620,800 
+           L 720,950 
+           L 700,1080 
+           L 740,1180 
+           L 680,1320 
+           L 720,1500 
+           L 0,1500 Z" 
+        fill="url(#rockGrad1)"/>
+
+  <!-- Rock Texture & Strata Lines -->
+  <g stroke="#1a1c20" stroke-width="2" opacity="0.75">
+    <!-- Horizontal geological rock bands -->
+    <path d="M 20,720 Q 150,710 320,740" fill="none"/>
+    <path d="M 40,760 Q 200,750 420,780" fill="none"/>
+    <path d="M 30,810 Q 250,790 480,830" fill="none"/>
+    <path d="M 50,860 Q 280,840 540,880" fill="none"/>
+    <path d="M 60,910 Q 300,900 600,940" fill="none"/>
+    <path d="M 70,970 Q 320,960 650,1010" fill="none"/>
+    <path d="M 90,1040 Q 350,1030 680,1080" fill="none"/>
+    <path d="M 120,1120 Q 380,1100 700,1150" fill="none"/>
+    <path d="M 150,1200 Q 400,1180 690,1230" fill="none"/>
+    <path d="M 180,1290 Q 420,1260 700,1310" fill="none"/>
+    <path d="M 220,1380 Q 440,1350 710,1400" fill="none"/>
+
+    <!-- Vertical fracture cracks -->
+    <path d="M 180,720 L 160,850 L 175,980" fill="none"/>
+    <path d="M 340,740 L 320,890 L 335,1060" fill="none"/>
+    <path d="M 480,830 L 460,990 L 470,1180" fill="none"/>
+  </g>
+
+  <!-- Rock Highlights (Light gray rims) -->
+  <g stroke="#9fa7b0" stroke-width="2" opacity="0.4" fill="none">
+    <path d="M 0,650 Q 80,640 140,680 L 180,660 L 240,710 L 320,670 Q 420,690 480,760"/>
+    <path d="M 480,760 L 520,740 L 580,820 L 620,800 L 720,950"/>
+  </g>
+
+  <!-- Dense Alpine Pine & Fir Trees along Cliff Rim and Ridge -->
+  <g fill="#0e1013">
+    <!-- Tree cluster on cliff top edge -->
+    <!-- Pine 1 -->
+    <polygon points="170,660 162,680 178,680"/>
+    <polygon points="170,670 158,695 182,695"/>
+    <polygon points="170,685 154,715 186,715"/>
+    <rect x="168" y="715" width="4" height="8"/>
+
+    <!-- Pine 2 (Tall) -->
+    <polygon points="230,620 220,650 240,650"/>
+    <polygon points="230,635 215,675 245,675"/>
+    <polygon points="230,655 210,705 250,705"/>
+    <rect x="228" y="705" width="4" height="12"/>
+
+    <!-- Pine 3 -->
+    <polygon points="280,640 272,665 288,665"/>
+    <polygon points="280,655 268,685 292,685"/>
+    <polygon points="280,675 264,710 296,710"/>
+    <rect x="278" y="710" width="4" height="10"/>
+
+    <!-- Pine 4 (Prominent cluster on right cliff edge) -->
+    <polygon points="450,680 438,715 462,715"/>
+    <polygon points="450,700 432,745 468,745"/>
+    <polygon points="450,725 425,780 475,780"/>
+    <rect x="448" y="780" width="5" height="15"/>
+
+    <!-- Pine 5 (Hero tree hanging over cliff) -->
+    <polygon points="510,660 496,700 524,700"/>
+    <polygon points="510,685 490,735 530,735"/>
+    <polygon points="510,715 482,775 538,775"/>
+    <rect x="507" y="775" width="6" height="18"/>
+
+    <!-- Pine 6 -->
+    <polygon points="570,720 558,755 582,755"/>
+    <polygon points="570,740 552,785 588,785"/>
+    <polygon points="570,765 545,820 595,820"/>
+    <rect x="567" y="820" width="5" height="14"/>
+
+    <!-- Pine 7 -->
+    <polygon points="610,730 600,760 620,760"/>
+    <polygon points="610,750 595,785 625,785"/>
+    <polygon points="610,770 590,815 630,815"/>
+    <rect x="608" y="815" width="4" height="12"/>
+
+    <!-- Pine 8 -->
+    <polygon points="670,820 658,860 682,860"/>
+    <polygon points="670,845 652,895 688,895"/>
+    <polygon points="670,875 645,940 695,940"/>
+    <rect x="667" y="940" width="5" height="16"/>
+
+    <!-- Smaller distant pines on mid ridge -->
+    <polygon points="380,590 374,615 386,615"/>
+    <polygon points="380,605 370,635 390,635"/>
+    <polygon points="400,600 395,620 405,620"/>
+    <polygon points="730,530 725,550 735,550"/>
+    <polygon points="750,540 744,565 756,565"/>
+  </g>
+
+  <!-- Cascading Mountain Mist rising from bottom canyon -->
+  <path d="M 400,1100 Q 700,950 1000,1050 L 1000,1500 L 400,1500 Z" fill="#d0d7de" opacity="0.35" filter="url(#mistBlur)"/>
+  <path d="M 550,1250 Q 800,1150 1000,1200 L 1000,1500 L 550,1500 Z" fill="#ffffff" opacity="0.4" filter="url(#mistBlur)"/>
+</svg>

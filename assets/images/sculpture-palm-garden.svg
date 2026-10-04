@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
+  <defs>
+    <!-- Warm Golden Hour Garden Sky -->
+    <linearGradient id="gardenSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a6572"/>
+      <stop offset="40%" stop-color="#f9aa33"/>
+      <stop offset="70%" stop-color="#fce2b6"/>
+      <stop offset="100%" stop-color="#fef8ec"/>
+    </linearGradient>
+
+    <!-- Classical Marble Sculpture Lighting -->
+    <linearGradient id="marbleLit" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#f0ebe1"/>
+      <stop offset="85%" stop-color="#c8bead"/>
+      <stop offset="100%" stop-color="#8a8071"/>
+    </linearGradient>
+
+    <!-- Pedestal Stone -->
+    <linearGradient id="pedestalGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8e0d3"/>
+      <stop offset="60%" stop-color="#baaf9e"/>
+      <stop offset="100%" stop-color="#726859"/>
+    </linearGradient>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1000" height="1500" fill="url(#gardenSky)"/>
+
+  <!-- Golden Afternoon Sun Behind Foliage -->
+  <circle cx="320" cy="450" r="160" fill="#fff6dd" opacity="0.8" filter="url(#softGlow)"/>
+
+  <!-- Distant Garden Terraces & Mediterranean Wall -->
+  <rect x="0" y="880" width="1000" height="620" fill="#4d5345"/>
+  <rect x="0" y="960" width="1000" height="540" fill="#2d3326"/>
+
+  <!-- Marble Pedestal Base -->
+  <g>
+    <!-- Lower Plinth -->
+    <rect x="360" y="1280" width="280" height="180" rx="3" fill="url(#pedestalGrad)"/>
+    <!-- Middle Cornice -->
+    <rect x="390" y="1040" width="220" height="240" rx="2" fill="url(#pedestalGrad)"/>
+    <!-- Upper Capital -->
+    <rect x="370" y="1000" width="260" height="40" rx="3" fill="url(#pedestalGrad)"/>
+    <!-- Pedestal Trim Shadows -->
+    <line x1="390" y1="1040" x2="610" y2="1040" stroke="#5a5245" stroke-width="3"/>
+    <line x1="360" y1="1280" x2="640" y2="1280" stroke="#5a5245" stroke-width="4"/>
+  </g>
+
+  <!-- Classical Marble Sculpture (Elegantly sculpted figure) -->
+  <g id="marbleSculpture">
+    <!-- Flowing Drapery / Toga -->
+    <path d="M 440,700 
+             Q 410,820 420,1000 
+             L 580,1000 
+             Q 590,830 550,700 
+             Z" 
+          fill="url(#marbleLit)"/>
+    
+    <!-- Drapery Fold Shadows -->
+    <g stroke="#8c8172" stroke-width="3" fill="none" opacity="0.6">
+      <path d="M 460,740 Q 450,860 455,995"/>
+      <path d="M 495,720 Q 485,850 490,995"/>
+      <path d="M 530,730 Q 535,840 525,995"/>
+      <path d="M 555,770 Q 565,880 560,995"/>
+    </g>
+
+    <!-- Torso -->
+    <path d="M 455,540 
+             Q 440,620 440,700 
+             L 555,700 
+             Q 555,620 540,540 
+             Z" 
+          fill="url(#marbleLit)"/>
+
+    <!-- Shoulders & Arms -->
+    <path d="M 420,560 Q 450,530 495,530 Q 545,530 575,560 L 590,680 L 565,685 L 550,580 L 445,580 L 430,685 L 405,680 Z" fill="url(#marbleLit)"/>
+
+    <!-- Neck -->
+    <rect x="480" y="475" width="36" height="65" rx="5" fill="url(#marbleLit)"/>
+
+    <!-- Classical Head / Profile -->
+    <ellipse cx="498" cy="425" rx="38" ry="52" fill="url(#marbleLit)"/>
+
+    <!-- Carved Hair Curls -->
+    <path d="M 465,420 Q 470,370 500,370 Q 530,370 535,420 Q 540,400 525,380 Q 498,365 475,385 Z" fill="#8a8071"/>
+    <ellipse cx="498" cy="385" rx="34" ry="18" fill="#a89d8d"/>
+  </g>
+
+  <!-- Foreground Exotic Palm Fronds Framing the Composition -->
+  <!-- Left Overhead Palm Fronds -->
+  <g fill="#18231c">
+    <!-- Frond 1 -->
+    <path d="M 0,150 Q 250,220 420,380 Q 280,320 0,320 Z"/>
+    <!-- Frond Leaflets -->
+    <path d="M 120,200 L 150,260 L 125,260 Z"/>
+    <path d="M 180,220 L 220,290 L 195,290 Z"/>
+    <path d="M 250,250 L 300,340 L 275,335 Z"/>
+    <path d="M 320,300 L 370,400 L 350,390 Z"/>
+
+    <!-- Frond 2 -->
+    <path d="M 0,0 Q 220,80 380,240 Q 240,180 0,160 Z"/>
+  </g>
+
+  <!-- Right Lush Palm Fronds -->
+  <g fill="#111914">
+    <!-- Main Right Palm Frond hanging into frame -->
+    <path d="M 1000,100 Q 750,180 580,360 Q 720,290 1000,280 Z"/>
+    <path d="M 880,160 L 850,240 L 870,240 Z"/>
+    <path d="M 800,190 L 760,280 L 780,280 Z"/>
+    <path d="M 720,230 L 670,330 L 690,330 Z"/>
+    <path d="M 640,290 L 590,400 L 610,395 Z"/>
+
+    <!-- Lower Right Palm Bush -->
+    <path d="M 1000,750 Q 800,820 660,980 Q 820,950 1000,960 Z"/>
+    <path d="M 1000,900 Q 750,970 620,1200 Q 780,1150 1000,1160 Z"/>
+  </g>
+
+  <!-- Potted Botanical Plants around base -->
+  <g fill="#1f2c22">
+    <!-- Large Terracotta Pot Left -->
+    <path d="M 160,1250 L 280,1250 L 255,1450 L 185,1450 Z" fill="#9a5a3a"/>
+    <ellipse cx="220" cy="1250" rx="60" ry="12" fill="#ba7350"/>
+    <!-- Fan Palm Fronds in Pot -->
+    <path d="M 220,1250 Q 150,1080 80,1050 Q 130,1150 220,1250 Z"/>
+    <path d="M 220,1250 Q 200,1020 180,960 Q 210,1100 220,1250 Z"/>
+    <path d="M 220,1250 Q 260,1040 310,1000 Q 270,1120 220,1250 Z"/>
+  </g>
+
+  <!-- Warm Atmospheric Golden Dust / Sunlight Flecks -->
+  <g fill="#fff5d9" opacity="0.5">
+    <circle cx="480" cy="460" r="3"/>
+    <circle cx="530" cy="520" r="2.5"/>
+    <circle cx="430" cy="620" r="3.5"/>
+    <circle cx="580" cy="740" r="2"/>
+    <circle cx="360" cy="880" r="3"/>
+  </g>
+</svg>
